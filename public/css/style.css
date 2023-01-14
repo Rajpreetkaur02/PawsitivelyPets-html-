@@ -1,0 +1,839 @@
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: none;
+    border: none; */
+    text-decoration: none; 
+}
+.navbar {
+    background-color: #e5eeff;
+    height: 12vh;
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: 700;
+}
+
+.left {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    list-style: none;
+    width: 35%;
+    padding-left: 4vw;
+}
+
+.left li {
+    width: 110px; 
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.left li:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.center {
+    width: 50%;
+    display: flex;
+    padding-left: 15%;
+    padding-top: 1%;
+}
+.center>a>img{
+    width: 25%;
+    /* height: 5%; */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 35%;
+    list-style: none;
+}
+.home{
+    height: 120vh;
+    /* background-image: url(https://images-ext-2.discordapp.net/external/UWZYPkWJ9lP5JInhgCFOGE7KbR6XPf1bgV67FAbYkro/https/petmania.vamtam.com/wp-content/uploads/2022/06/iStock-157527277.png?width=453&height=586);  */
+    
+}
+
+#logout {
+    display: none;
+}
+
+#userName {
+    display: none;
+}
+
+.TwoThirdpart{
+    height: 70vh;  
+    width: 100%;
+}
+.homeleft{
+    height: 70vh;
+    float: left;
+    width: 45%;
+    background-color: #e5eeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.homeright{
+    height: 70vh;
+    float: right;
+    width: 55%;
+    background-color: #e5eeff;
+    display: flex;
+    align-items: flex-end;
+}
+
+.homeleft>span{
+    font-size: 4.5rem;
+    padding-left: 10%;
+    font-family: "Fredoka One",cursive;
+}
+.OneThirdpart{
+    height: 100vh;
+}
+
+.buttoncontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35vw;
+}
+.span1{
+    /* border: 2px solid black; */
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+}
+.span2{
+    /* border: 2px solid black; */
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #ffd100;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+}
+
+.catimg {
+    margin-bottom: -35px;
+    margin-left: -110px;
+}
+.dryerimg{
+    height: 17.5em;
+    margin-bottom: -17px;
+}
+.combimg{
+    margin-left: -70px;
+    margin-bottom: -110px;
+    z-index: 1;
+}
+.dogimg{
+    height: 75vh;
+    margin-left: -13em;
+    z-index: 0;
+}
+
+.shopdropdown{
+    background-color: white;
+    position: absolute;
+    top: 10vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: auto;
+    border-radius: 20px;
+    /* justify-content: center; */
+    display: none;
+    padding: 0;
+}
+
+.shopdropdown ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+}
+
+.shopdropdown ul li {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+.shopdropdown ul li:hover {
+    background-color: #ffd100;
+}
+
+.heading{
+    height: 20vh;
+    padding: 4%;
+    font-family: "Fredoka One",cursive;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+.container img{
+    height: 65vh;
+    width: 25vw;
+    background: whitesmoke;
+}
+.card{
+    height: 65vh;
+    margin: 50px;
+    box-shadow: 5px 5px 20px #ffd100;
+    overflow: hidden;
+    border-radius: 2%;
+    position: relative;
+}
+
+.intro{
+    height: 12vh;
+    width: 25vw;
+    padding: 6px;
+    box-sizing: border-box;
+    bottom: 0px;
+    position: absolute;
+    /* background: #ffd100; */
+    background: #e5eeff;
+}
+.intro h1{
+    margin: 10px;
+    text-align: center;
+    font-family: "Readex Pro", Sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.intro h3{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.intro button{
+    visibility: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 30vh;
+}
+
+.card:hover .intro h3{
+    visibility: visible;
+    font-family: "Readex Pro", Sans-serif;
+    text-align: center;
+    opacity: 1;
+}
+
+.card:hover .intro button{
+    visibility: visible;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 6.8vw;
+}
+
+
+.dropdown_menu_show {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f1f1f1; */
+    /* transition-delay: 1s; */
+}
+
+.adopt {
+    font-family: "Fredoka One",cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.carousel {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+  
+.slide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.adoption {
+    margin-left: 3%;
+    height: 80vh;
+    box-shadow: 5px 10px 15px black;
+    width: 95%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.adoptleft {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding-left: 10%;
+    height: 80vh;
+}
+.adoptright{
+    padding: 5%;
+    float: right;
+    justify-content: center;
+    padding-bottom: 20%;
+    align-items: center;
+    background: linear-gradient(to left, #e5eeff, #ffffff)
+}
+.adoptright>h3{
+    text-align: center;
+    font-family: "Readex Pro", Sans-serif;
+    font-size: 1.5rem;
+}
+.adoptright>h1{
+    text-align: center;
+    font-family: "Fredoka One",cursive;
+    font-size: 3rem;
+    color: #ffd100;
+}
+.adoptright>p{
+    text-align: center;
+    font-family: "Readex Pro", Sans-serif;
+    margin: 10px 0 20px;
+    line-height: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 0.9rem;
+}
+.adoptright>button{
+    cursor: pointer;
+    width: 20vw;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+    margin-left: 32%;
+}
+.footer{
+    height: auto;
+    background-color: #e5eeff; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.footer-topbar{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+}
+
+.social-icon {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo>a>img{
+    height: 12vh;
+}
+
+.footer-topbar>img{
+    height: 8vh;
+    width: 8vh;
+}
+
+.footer-secondbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Readex Pro", Sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 30vw;
+    align-items: center;
+}
+
+.main-footer{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.main-footer>span{
+    font-family: "Fredoka One",cursive;
+    font-size: 3rem;
+}
+
+.main-footer-email{
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-footer-email>span{
+    font-size:1.2rem;
+    font-family: "Readex Pro", Sans-serif;
+}
+.main-footer-email>button{
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #ffd100;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+}
+
+.main-footer>div>img{
+    width: 46vh;
+    /* margin-right: 70%; */
+}
+
+.footer-foot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-family: "Readex Pro", Sans-serif;
+}
+
+.details span {
+    display: flex;
+}
+
+.termsprivacy ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 17vw;
+}
+
+.termsprivacy ul li {
+    cursor: pointer;
+}
+
+.termsprivacy ul li:hover {
+    color: gray;
+    transition: 0.5;
+}
+
+.details {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+}
+
+/* counter */
+.hero{
+    width: 100%;
+    height: 50vh;
+    /* background-image: linear-gradient(rgba(103,58,183,0.8),rgba(33,150,243,0.5)),url(background.jpg); */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    font-family: "Fredoka One",cursive;
+    font-weight: 100;
+}
+.title{
+    width: 60%;
+    display: inline-block;
+    margin: 150px auto 0;
+    color: #fff;
+    text-align: center;
+}
+.title h1{
+    margin-bottom: 30px;
+}
+.title p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.col{
+    flex-basis: 22%;
+    text-align: center;
+    color: #555;
+}
+.counter-box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px -4px #66676c;
+}
+/* h2,span{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    color: #000;
+} */
+.counter-box .fa{
+    font-size: 40px;
+    color: #ffd100;
+    display: block;
+}
+
+.innerCounter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 6.5vh;
+}
+
+.innerCounter p {
+    font-size: 20px;
+}
+
+/* blog   */
+/* *{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+} */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.span1>a {
+    text-decoration: none;
+    color: white;
+}
+
+.span1>a:visited {
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+/* body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+} */
+
+
+/* blog   */
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    /* border-bottom: 1px solid rgba(0,0,0,0.05); */
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Fredoka One",cursive;
+    font-size: 3rem;
+}
+.blog-heading span{
+    color: #f33c3c;
+}
+.blog-heading h3{
+    /* font-size: 2.4rem; */
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #0f0f0f;
+
+}
+.blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+ /* sign-up  */
+
+.sign-up {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: auto;
+    left: 25vw;
+    width: 50vw;
+    height: 77vh;
+    z-index: 20;
+    /* object-fit: contain; */
+    font-family: "Fredoka One",cursive;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sign-up::-webkit-scrollbar {
+    display: none;
+}
+
+.container1 {
+    padding: 16px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #ffd100;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-family: "Fredoka One",cursive;
+    font-size: 1rem;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  /* Add a blue text color to links */
+  /* a {
+    color: dodgerblue;
+  } */
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin1 {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+.container1 h1 {
+    text-align: center;
+}
+
+.sign_up_focus {
+    display: block;
+}
+
+#cross {
+    float: right;
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 0.5;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.sign-in {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: auto;
+    left: 25vw;
+    width: 50vw;
+    height: auto;
+    z-index: 20;
+    /* object-fit: contain; */
+    font-family: "Fredoka One",cursive;
+    display: none;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.sign-in::-webkit-scrollbar {
+    display: none;
+}
+
+.container2 {
+    padding: 16px;
+  }
+  
+  /* Full-width input fields */
+  
+  /* Overwrite default styles of hr */
+  
+  /* Set a style for the submit/register button */
+  .signinbtn {
+    background-color: #ffd100;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-family: "Fredoka One",cursive;
+    font-size: 1rem;
+  }
+  
+  .signinbtn:hover {
+    opacity:1;
+  }
+  
+  /* Add a blue text color to links */
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signup {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+.container2 h1 {
+    text-align: center;
+}
+
+.sign_in_focus {
+    display: block;
+}
+
+#cross, #cross1 {
+    float: right;
+    cursor: pointer;
+}
+
+#greeting {
+    display: none;
+}

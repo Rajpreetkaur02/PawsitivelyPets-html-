@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: none;
+    border: none; */
+    text-decoration: none; 
+}
+
+.maincart h1 {
+    text-align: center;
+    font-family: "Fredoka One",cursive;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.maincart table {
+    width: 92%;
+    padding-left: 4%;
+}
+
+.cartItemImg {
+    width: 25%;
+}
+
+.addedItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 40%; */
+    font-family: "Readex Pro", Sans-serif;
+    font-size: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.cartHead {
+    /* display: flex; */
+    justify-content: space-around;
+    border-bottom: 4px solid gray;
+    height: 5vh;
+    font-family: "Fredoka One",cursive;
+}
+
+.headItems {
+    width: 50%;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+}
+td {
+    text-align: center;
+    font-family: "Readex Pro", Sans-serif;
+}
+
+.quantity {
+    width: 20%;
+}
+.delete {
+    border: none;
+    cursor: pointer;
+}
+
+.finalTotal {
+    float: right;
+    padding-top: 5%;
+    padding-right: 10%;
+}
+
+.subtotal {
+    display: flex;
+    align-items: center;
+}

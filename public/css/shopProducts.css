@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: none;
+    border: none; */
+    text-decoration: none; 
+}
+
+.shop-container{
+    max-width: 100%;
+    margin: auto; 
+    padding: 4rem 2rem 3rem;
+}
+
+.shop-title{
+    font-family: "Fredoka One",cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27vw, auto));
+    gap: 1.5rem;
+}
+
+.product-card{
+    position: relative;
+    /* box-shadow: 0 5px 20px rgba(0,0,0,.3); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-family: "Readex Pro", Sans-serif;
+}
+
+.product-card>span{
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.product-card>p{
+    font-size: 1rem;
+    line-height: 25px;
+    font-family: "Readex Pro", Sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stars{
+    font-size: 1.3rem;
+    color: #ffa41c;
+    margin-bottom: 0.5rem;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card>button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    text-transform: capitalize;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.product-card>button:hover{
+    transform: scale(1.1);
+}
+
