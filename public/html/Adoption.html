@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Adoption.css">
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rancho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Pawsitively Pets | Adoption</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('3l4D56Hv6nafOi3BZ');
+        })();
+    </script>
+</head>
+<body>
+    <!-- navbar -->
+
+    <div class="navbar">
+        <div class="left">
+            <li><a href="../index.html">HOME</a></li>
+            <li class="shop">SHOP
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+            </li>
+            <div class="shopdropdown">
+                <ul>
+                    <li><a href="../html/Groomingproducts.html">PET GROOMING</a></li>
+                    <li><a href="../html/FoodProducts.html">PET FOOD</a></li>
+                    <li><a href="../html/Accessories.html">ACCCESSORIES</a></li>
+                </ul>
+            </div>
+            <li><a href="../html/BlogHome.html">BLOGS</a></li>
+            <li><a href="../html/Adoption.html">ADOPTION</a></li>
+        </div>
+        <div class="center">            
+            <a href="../index.html"><img src="../images/logo.png"/></a>
+            
+        </div>
+        <div class="right">
+            <li>CONTACT</li>
+            <span class="material-symbols-outlined">
+                account_circle
+                </span>
+            <span id="greeting">Hello,</span> <span id="userName">USER</span>
+            <span class="span2" id="sign_in">SIGN IN</span>
+            <span class="span2" id="logout">LOGOUT</span>
+        </div>
+    </div>
+
+    <!-- adoption intro -->
+
+    <div class="journey">
+        <h1>Your Pet Adoption Journey With Pawsitively Pets</h1>
+        <div class="journeycontent">
+            <div class="journeyright">
+                <img src="../images/adoptme.jpg">
+            </div>
+            <div class="journeyleft">
+                <div class="adoptionpoints">
+                    <img src="../images/form.png">
+                    <div class="pointscontent">
+                        <span>Fill the form</span>
+                        <p>Adopt a dog or cat or any pet who's right for you. Simply enter your details in the form.</p>
+                    </div> 
+                </div>
+                <div class="adoptionpoints">
+                    <img src="../images/24-hours.png">
+                    <div class="pointscontent">
+                        <span>Connect</span>
+                        <p>Once you find a pet, we will send you a mail to get contact info for the pet parent or rescue. Contact them to learn more about how to meet and adopt the pet.</p>
+                    </div> 
+                </div>
+                <div class="adoptionpoints">
+                    <img src="../images/animal-care.png">
+                    <div class="pointscontent">
+                        <span>AdoptLove</span>
+                        <p>The rescue or pet parents will walk you through their adoption process. Prepare your home for the arrival of your fur baby to help them adjust to their new family.</p>
+                    </div> 
+                </div>
+                <div class="adoptionpoints">
+                    <img src="../images/veterinary.png">
+                    <div class="pointscontent">
+                        <span>Free vet Consultation</span>
+                        <p>Pawsitively Pets will help your pet to settle down in its new home, once you complete the Adoption journey reach out to us for free vet consultation.</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- adoption form -->
+
+<div class="MainForm">
+    <div class="formContainer">
+        <div class="formTitle">ADOPTION</div>
+        <form id="contact-form">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" name="user_name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="user_email" placeholder="Enter your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Contact no.</span>
+                    <input type="text" name="user_contact" placeholder="Enter your contact no." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Pet Type</span>
+                    <input type="text" name="user_pet" placeholder="Enter the pet type" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" name="user_city" placeholder="Enter your city" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">State</span>
+                    <input type="text" name="user_state" placeholder="Enter your state" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Message</span>
+                    <textarea name="message" placeholder="Enter additional information..."></textarea>
+                </div>
+            </div>
+            <div class="formbutton">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- faqs -->
+
+    <div class="questionsContainer">
+        <h1>Frequently Asked Questions</h1>
+        <div class="questionsContent">
+            <div class="questions">
+                <span>Why Should You Adopt a pet?
+                    <div class="plus">
+                       <span class="add material-symbols-outlined">
+                        add
+                        </span> 
+                        <span id="removebtn" class="remove material-symbols-outlined">
+                            remove
+                            </span>
+                    </div>
+                </span>
+                <div class="answer">Did you know that over 2000 people per hour in India run a search right here looking to adopt a pet? Pet adoption is becoming the preferred way to find a new pet. Adoption will always be more convenient than buying a puppy for sale from a pet shop or finding a kitten for sale from a litter. Pet adoption brings less stress and more savings! So what are you waiting for? Go find that perfect pet for home!</div> 
+            </div>
+            <div class="questions">
+                <span>What is the fee to adopt a pet?
+                    <div class="plus">
+                        <span class="add material-symbols-outlined">
+                         add
+                         </span> 
+                         <span id="removebtn" class="remove material-symbols-outlined">
+                            remove
+                            </span>
+                     </div>
+                </span>
+                <div class="answer">No, there is no fee for pet adoption on ThePetnest. However, if you adopt from a different city pet owner/rescuer can ask for travel charges. In case if you find someone asking for charges you can write us at support@thepetnest.com.</div>
+            </div>
+            <div class="questions">
+                <span>How old do I need to be to adopt a pet?
+                    <div class="plus">
+                        <span class="add material-symbols-outlined">
+                         add
+                         </span> 
+                         <span id="removebtn" class="remove material-symbols-outlined">
+                            remove
+                            </span>
+                     </div>
+                </span>
+                <div class="answer">You need to be at least 18+ years old to adopt.</div>
+            </div>
+            <div class="questions">
+                <span>Can you return an adopted pet?
+                    <div class="plus">
+                        <span class="add material-symbols-outlined">
+                         add
+                         </span> 
+                         <span id="removebtn" class="remove material-symbols-outlined">
+                            remove
+                            </span>
+                     </div>
+                </span>
+                <div class="answer">We understand it can be hard to get an adjusted pet in the new home and vice versa, as long as your reason for returning is reasonable, you'll be welcome to put it up for adoption again.</div>
+            </div>   
+        </div>
+    </div>
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="text/javascript" src="../js/Adoption.js"></script>
+    <script type="module" src="../js/shop2.js"></script>
+</body>
+</html>

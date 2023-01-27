@@ -1,11 +1,6 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getFirestore, collection, addDoc, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
-// const app = initializeApp(firebaseConfig);
-const db = getFirestore();
-// const colRef = collection(db, 'blogs');
 
-// var blogTitleField = document.querySelector('.title');
-// var articleField = document.querySelector('.article');
+const db = getFirestore();
 
 //banner
 const bannerImage = document.querySelector('#banner-upload');
@@ -61,7 +56,6 @@ publishBtn.addEventListener('click', async () => {
     var articleField = document.querySelector('.article');
 
     if(articleField.value.length && blogTitleField.value.length){
-    // if(blogTitleField.length){
         let letters = 'abcdefghijklmnopqrstuvwxyz';
         let blogtitle = blogTitleField.value.split(" ").join("-");
         let id = '';
@@ -84,17 +78,6 @@ publishBtn.addEventListener('click', async () => {
             bannerImage: bannerPath,
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
-
-        
-        //banner
-        // var bannerImage = document.querySelector('#banner-upload');
-        // var banner = document.querySelector(".banner");
-        // addDoc(doc(db, "blogs"), {
-        //     title: blogTitleField.value,
-        //     article: articleField.value,
-        //     bannerImage: bannerPath,
-        //     publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
-        //   })
         .then(() => {
             console.log('data entered');
             location.href = `/${docName}`;

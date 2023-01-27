@@ -1,3 +1,4 @@
+/* universal */
 body {
     margin: 0;
     padding: 0;  
@@ -5,14 +6,14 @@ body {
 
 * {
     box-sizing: border-box;
-    /* outline: none;
-    border: none; */
     text-decoration: none; 
 }
+
+/* NAVBAR */
+
 .navbar {
     background-color: #e5eeff;
     height: 12vh;
-    /* position: fixed; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,7 +23,6 @@ body {
 
 .left {
     display: flex;
-    /* align-items: center; */
     justify-content: space-around;
     list-style: none;
     width: 35%;
@@ -71,8 +71,6 @@ a:visited {
 }
 .home{
     height: 120vh;
-    /* background-image: url(https://images-ext-2.discordapp.net/external/UWZYPkWJ9lP5JInhgCFOGE7KbR6XPf1bgV67FAbYkro/https/petmania.vamtam.com/wp-content/uploads/2022/06/iStock-157527277.png?width=453&height=586);  */
-    
 }
 
 #logout {
@@ -82,6 +80,8 @@ a:visited {
 #userName {
     display: none;
 }
+
+/* HOME PAGE */
 
 .TwoThirdpart{
     height: 70vh;  
@@ -120,7 +120,6 @@ a:visited {
     width: 35vw;
 }
 .span1{
-    /* border: 2px solid black; */
     cursor: pointer;
     padding: 15px 30px;
     border-radius: 30px;
@@ -130,7 +129,6 @@ a:visited {
     font-weight: bold;
 }
 .span2{
-    /* border: 2px solid black; */
     cursor: pointer;
     padding: 15px 30px;
     border-radius: 30px;
@@ -157,6 +155,8 @@ a:visited {
     margin-left: -13em;
     z-index: 0;
 }
+
+/* SHOP DROP DOWN MENU */
 
 .shopdropdown{
     background-color: white;
@@ -193,6 +193,8 @@ a:visited {
     background-color: #ffd100;
 }
 
+/* OUR PRODUCTS */
+
 .heading{
     height: 20vh;
     padding: 4%;
@@ -206,6 +208,7 @@ a:visited {
     justify-content: center;
     height: 80vh;
     align-items: center;
+    flex-wrap: wrap;
 }
 .container img{
     height: 65vh;
@@ -215,9 +218,9 @@ a:visited {
 .card{
     height: 65vh;
     margin: 50px;
-    box-shadow: 5px 5px 20px #ffd100;
+    box-shadow: 15px 15px 45px gray;
     overflow: hidden;
-    border-radius: 2%;
+    border-radius: 5%;
     position: relative;
 }
 
@@ -228,8 +231,12 @@ a:visited {
     box-sizing: border-box;
     bottom: 0px;
     position: absolute;
-    /* background: #ffd100; */
     background: #e5eeff;
+    border-radius: 10px;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .intro h1{
     margin: 10px;
@@ -245,7 +252,12 @@ a:visited {
 }
 
 .intro button{
+    border: black;
     visibility: hidden;
+}
+
+.intro button a:visited, .intro button a {
+    color: white;
 }
 
 .card:hover{
@@ -272,7 +284,7 @@ a:visited {
     font-family: "Readex Pro", Sans-serif;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 6.8vw;
+    width: 50%;
 }
 
 
@@ -280,9 +292,9 @@ a:visited {
     display: block;
     align-items: center;
     justify-content: center;
-    /* background-color: #f1f1f1; */
-    /* transition-delay: 1s; */
 }
+
+/* ADOPTION */
 
 .adopt {
     font-family: "Fredoka One",cursive;
@@ -306,14 +318,19 @@ a:visited {
 }
 
 .adoption {
-    margin-left: 3%;
-    height: 80vh;
-    box-shadow: 5px 10px 15px black;
-    width: 95%;
-    margin-bottom: 5%;
-    border-radius: 20px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    height: 100vh;
+    width: 100%;
+}
+
+.adoptionContent{
+    margin-left: 10%;
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    box-shadow: 5px 10px 15px gray;
+    border-radius: 20px;
 }
 
 .adoptleft {
@@ -321,27 +338,29 @@ a:visited {
     align-items: center;
     align-items: center;
     padding-left: 10%;
-    height: 80vh;
 }
 .adoptright{
-    padding: 5%;
-    float: right;
-    justify-content: center;
-    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    background: linear-gradient(to left, #e5eeff, #ffffff)
+    background: linear-gradient(to left, #e5eeff, #ffffff);
+    border-radius: 20px;
 }
 .adoptright>h3{
     text-align: center;
     font-family: "Readex Pro", Sans-serif;
     font-size: 1.5rem;
-}
+} 
+
+
 .adoptright>h1{
     text-align: center;
     font-family: "Fredoka One",cursive;
     font-size: 3rem;
     color: #ffd100;
 }
+
 .adoptright>p{
     text-align: center;
     font-family: "Readex Pro", Sans-serif;
@@ -360,8 +379,14 @@ a:visited {
     color: white;
     font-family: "Readex Pro", Sans-serif;
     font-weight: bold;
-    margin-left: 32%;
+    border: 1px solid black;
+} 
+.adoptright>button>a {
+    color: white;
 }
+
+/* FOOTER */
+
 .footer{
     height: auto;
     background-color: #e5eeff; 
@@ -477,17 +502,16 @@ a:visited {
 
 .details {
     display: flex;
-    /* align-items: flex-start; */
     justify-content: center;
     flex-direction: column;
     width: 50vw;
 }
 
-/* counter */
+/* COUNTER */
+
 .hero{
     width: 100%;
     height: 50vh;
-    /* background-image: linear-gradient(rgba(103,58,183,0.8),rgba(33,150,243,0.5)),url(background.jpg); */
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -532,12 +556,6 @@ a:visited {
     border-radius: 15px;
     box-shadow: 0 0 20px -4px #66676c;
 }
-/* h2,span{
-    display: inline-block;
-    margin: 15px 0;
-    font-size: 50px;
-    color: #000;
-} */
 .counter-box .fa{
     font-size: 40px;
     color: #ffd100;
@@ -555,13 +573,7 @@ a:visited {
     font-size: 20px;
 }
 
-/* blog   */
-/* *{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
-} */
+/* BLOG  */
 
 a{
     text-decoration: none;
@@ -580,97 +592,55 @@ a{
 ul{
     list-style: none;
 }
-/* body{
-    margin:0px;
-    padding: 0px;
-    font-family: poppins;
-} */
 
-
-/* blog   */
-
-#blog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    /* border-bottom: 1px solid rgba(0,0,0,0.05); */
-}
 .blog-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: "Fredoka One",cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
-.blog-heading span{
-    color: #f33c3c;
+
+.blogs-section{
+    width: 100%;
+    padding: 7vh 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
 }
-.blog-heading h3{
-    /* font-size: 2.4rem; */
-    color: #2b2b2b;
-    font-weight: 600;
-}
-.blog-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-    flex-wrap: wrap;
-}
-.blog-box{
-    width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    margin: 20px;
-}
+
 .blog-img{
     width: 100%;
-    height: auto;
-}
-.blog-img img{
-    width: 100%;
-    height: 100%;
+    height: 35vh;
     object-fit: cover;
-    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 1vh;
 }
-.blog-text{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-}
-.blog-text span{
-    color: #f33c3c;
-    font-size: 0.9rem;
-}
-.blog-text .blog-title{
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #272727;
-}
-.blog-text .blog-title:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
-}
-.blog-text p{
-    color: #9b9b9b;
-    font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-line-clamp:3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 20px 0px;
-}
-.blog-text a{
-    color: #0f0f0f;
 
+.blog-title{
+    font-family: "Readex Pro", Sans-serif;
 }
-.blog-text a:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
+
+.blog-overview{
+    margin: 10px 0 20px;
+    line-height: 30px;
+    font-family: "Readex Pro", Sans-serif;
+}
+
+.blog-btn>button{
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+}
+.blog-card{
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+}
+
+.blog-card:hover{
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 
  /* sign-up  */
@@ -738,10 +708,6 @@ ul{
     opacity:1;
   }
   
-  /* Add a blue text color to links */
-  /* a {
-    color: dodgerblue;
-  } */
   
   /* Set a grey background color and center the text of the "sign in" section */
   .signin1 {
@@ -764,7 +730,6 @@ ul{
 
 .opacity {
     opacity: 0.5;
-    /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .sign-in {
@@ -776,11 +741,8 @@ ul{
     width: 50vw;
     height: auto;
     z-index: 20;
-    /* object-fit: contain; */
     font-family: "Fredoka One",cursive;
     display: none;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
 }
 
 .sign-in::-webkit-scrollbar {
@@ -790,10 +752,6 @@ ul{
 .container2 {
     padding: 16px;
   }
-  
-  /* Full-width input fields */
-  
-  /* Overwrite default styles of hr */
   
   /* Set a style for the submit/register button */
   .signinbtn {
@@ -812,8 +770,6 @@ ul{
   .signinbtn:hover {
     opacity:1;
   }
-  
-  /* Add a blue text color to links */
   
   /* Set a grey background color and center the text of the "sign in" section */
   .signup {

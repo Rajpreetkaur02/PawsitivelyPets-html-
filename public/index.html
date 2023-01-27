@@ -12,9 +12,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <title>PawsitivelyPets</title>
 </head>
 <body>
+    <!-- navbar -->
+
     <div class="navbar">
         <div class="left">
             <li><a href="index.html">HOME</a></li>
@@ -31,15 +37,14 @@
                 </ul>
             </div>
             <li><a href="/html/BlogHome.html">BLOGS</a></li>
-            <li>ADOPTION</li>
+            <li><a href="html/Adoption.html">ADOPTION</a></li>
         </div>
         <div class="center">            
             <a href="index.html"><img src="images/logo.png"/></a>
-            <!-- <img src="images/logo.png"/> -->
             
         </div>
         <div class="right">
-            <li>CONTACT</li>
+            <li><a href="#foot">CONTACT</a></li>
             <span class="material-symbols-outlined">
                 account_circle
                 </span>
@@ -49,59 +54,61 @@
         </div>
     </div>
 
-    <div class="sign-up">
-        <!-- <form action="/"> -->
-            <div class="container1">
-                <span id="cross" class="material-symbols-outlined">
-                    close
-                    </span>
-              <h1>Register</h1>
-              <hr>
+    <!-- signup -->
 
-              <label for="name"><b>Name</b></label>
-              <input type="text" placeholder="Full Name" name="name" id="name" required>
-          
-              <label for="email"><b>Email</b></label>
-              <input type="email" placeholder="Enter Email" name="email" id="email" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="password" required>
-              <hr>
-          
-              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-              <button id="register" class="registerbtn">Register</button>
-            </div>
-          
-            <div class="container1 signin1">
-              <p>Already have an account? <a id="signbtn" href="#">Sign in</a>.</p>
-            </div>
-          <!-- </form> -->
+    <div class="sign-up">
+        <div class="container1">
+            <span id="cross" class="material-symbols-outlined">
+                close
+                </span>
+            <h1>Register</h1>
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Full Name" name="name" id="name" required>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+            <hr>
+        
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button id="register" class="registerbtn">Register</button>
+        </div>
+        
+        <div class="container1 signin1">
+            <p>Already have an account? <a id="signbtn" href="#">Sign in</a>.</p>
+        </div>
     </div>
+
+    <!-- signin -->
 
     <div class="sign-in">
-        <!-- <form action="/"> -->
-            <div class="container2">
-                <span id="cross1" class="material-symbols-outlined">
-                    close
-                    </span>
-              <h1>Sign In</h1>
-              <hr>
+        <div class="container2">
+            <span id="cross1" class="material-symbols-outlined">
+                close
+                </span>
+            <h1>Sign In</h1>
+            <hr>
 
-              <label for="email"><b>Email</b></label>
-              <input type="email" placeholder="Enter Email" name="email" id="login-email" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
-              <hr>
-          
-              <button id = "sign" class="signinbtn">Sign In</button>
-            </div>
-          
-            <div class="container2 signup">
-              <p>Create an account? <a id="signupbtn" href="#">Sign up</a>.</p>
-            </div>
-          <!-- </form> -->
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" id="login-email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
+            <hr>
+        
+            <button id = "sign" class="signinbtn">Sign In</button>
+        </div>
+        
+        <div class="container2 signup">
+            <p>Create an account? <a id="signupbtn" href="#">Sign up</a>.</p>
+        </div>
     </div>
+
+    <!-- body -->
 
     <div class="home">
         <div class="TwoThirdpart">
@@ -122,11 +129,6 @@
         </div>
         <div class="OneThirdpart">
             <div class="hero">
-                <!-- <div class="title">
-                    <h1>ABOUT STUDIO</h1>
-                    <p>Duis vulputate et nulla ac dapibus. Nullam feugiat massa elit, at scelerisque urna facilisis id. Suspendisse commodo scelerisque sem sit amet aliquam. Curabitur nulla lectus, pretium ac arcu sed, laoreet eleifend nunc.Duis vulputate et nulla ac dapibus. Nullam feugiat massa elit.</p>
-                </div> -->
-        
                 <div class="row">
                     <div class="col">
                         <div class="counter-box">
@@ -165,9 +167,9 @@
             <div class="card">
                 <img src="images/pet.jpg" alt="pets"/>
                 <div class="intro">
-                    <h1>PETS</h1>
-                    <h3>New member for your home</h3>
-                    <button>SHOP NOW</button>
+                    <h1>PET GROOMING</h1>
+                    <h3>Give your pet a new look</h3>
+                    <button><a href="html/Groomingproducts.html">SHOP NOW</a></button>
                 </div>
             </div>
             <div class="card">
@@ -175,117 +177,55 @@
                 <div class="intro">
                     <h1>ORGANIC FOOD</h1>
                     <h3>Healthy & Cheap</h3>
-                    <button>SHOP NOW</button>
+                    <button><a href="html/FoodProducts.html">SHOP NOW</a></button>
                 </div>
             </div>
             <div class="card">
                 <img src="images/toys.jpg" alt="toys"/>
                 <div class="intro">
-                    <h1>PET TOYS</h1>
+                    <h1>ACCESSORIES</h1>
                     <h3>Fun & Exciting</h3>
-                    <button>SHOP NOW</button>
+                    <button><a href="html/Accessories.html">SHOP NOW</a></button>
                 </div>
             </div>
         </div>
     </div>
     <!-- blog -->
-    <!-- <section id="blog">
-        <div class="blog-heading">
-            <span>My Recent Posts</span>
-        </div>
-        <h3>My Blog</h3> -->
-        
-<section id="blog">
-    <!-- heading -->
     <div class="blog-heading">
-        <!-- <span>My Recent Posts</span> -->
-        <h3>MY BLOG</h3>
+        <h1>BLOGS</h1>
     </div>
-
-
-    <!-- blog container -->
-    <div class="blog-container">
-        <!-- box-1 -->
-        <div class="blog-box">
-            <!-- img -->
-            <div class="blog-img">
-                <img src="images/blog-1.jpeg" alt="Blog">
-            </div>
+    <section class="blogs-section">
     
-            <!-- text. -->
-            <div class="blog-text">
-                <span>31 dec 2022/ web development</span>
-                <a href="#" class="blog-title">What has happened of all of the web designs</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, explicabo corporis error atque reiciendis 
-                    adeum aspernatur officiis rem dolor optio fuga nam facere vel libero, earum quo ipsam iusto blanditiis. Animi.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <!-- box-2 -->
-        <div class="blog-box">
-            <!-- img -->
-            <div class="blog-img">
-                <img src="images/blog-1.jpeg" alt="Blog">
-            </div>
-    
-            <!-- text. -->
-            <div class="blog-text">
-                <span>31 dec 2022/ web development</span>
-                <a href="#" class="blog-title">What has happened of all of the web designs</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, explicabo corporis error atque reiciendis sequi     
-                     veroad eum aspernatur officiis rem dolor optio fuga nam facere vel libero, earum quo ipsam iusto blanditiis. Animi.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <!-- box-3 -->
-        <div class="blog-box">
-            <!-- img -->
-            <div class="blog-img">
-                <img src="images/blog-1.jpeg" alt="Blog">
-            </div>
-    
-            <!-- text. -->
-            <div class="blog-text">
-                <span>31 dec 2022/ web development</span>
-                <a href="#" class="blog-title">What has happened of all of the web designs</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, explicabo corporis error atque reiciendis sequi vero ad e                    um aspernatur officiis rem dolor optio fuga nam facere vel libero, earum quo ipsam iusto blanditiis. Animi.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <h1 class="adopt">ADOPTION</h1>
     <div class="adoption">
-        
-        <div class="adoptleft">
-            <div class="carousel">
-                <div class="slide">
-                  <img src="images/adoption1.jpeg" height="400px" width="400px" alt="Image 1">
-                </div>
-                <div class="slide">
-                  <img src="images/adoption2.jpeg" height="400px" width="400px" alt="Image 2">
-                </div>
-                <div class="slide">
-                  <img src="images/adoption3.jpeg" height="400px" width="400px" alt="Image 3">
-                </div>
-              </div>              
-        </div>
-        <div class="adoptright">
-            <h3>Our promise to you...</h3>
-            <h1>Happy pets, <br> Happy humans</h1>
-            <p>Get the latest on adoption processes, learn how local shelters and rescue groups are adapting and find out what you can do   to help dogs and cats in need right now. <br>
-            At Pawsitively Pets, we’re all real pet owners and lovers, so we experience it all, the funny moments, the adorable moments,the weird moments, the only-I-will-find-this-amusing moments.<br><br>
-            There are so many loving adoptable pets right in your community waiting for a family to call their own.</p>
-            <button>Learn More</button>
+        <div class="adoptionContent">
+            <div class="adoptleft">
+                <div class="carousel">
+                    <div class="slide">
+                      <img src="images/adoption1.jpeg" height="400px" width="400px" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                      <img src="images/adoption2.jpeg" height="400px" width="400px" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                      <img src="images/adoption3.jpeg" height="400px" width="400px" alt="Image 3">
+                    </div>
+                  </div>              
+            </div>
+            <div class="adoptright">
+                <h3>Our promise to you...</h3>
+                <h1>Happy pets, <br> Happy humans</h1>
+                <p>Get the latest on adoption processes, learn how local shelters and rescue groups are adapting and find out what you can do   to help dogs and cats in need right now. <br>
+                At Pawsitively Pets, we’re all real pet owners and lovers, so we experience it all, the funny moments, the adorable moments,the weird moments, the only-I-will-find-this-amusing moments.<br><br></p>
+                <button><a href="../html/adoption.html">Learn More</a></button>
+            </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="foot">
         <div class="footer-topbar">
             <div class="footer-logo">
-                <!-- <img src="images/logo.png"/> -->
                 <a href="index.html"><img src="images/logo.png"/></a>
             </div>
             <div class="social-icon">
@@ -308,8 +248,8 @@
         <div class="main-footer">
             <span>Are You ready to get started?</span>
             <div class="main-footer-email">
-                <span>pawsitivelypets@gmail.com</span>
-                <button>SHOP NOW</button>
+                <span>pawsitivelypets19@gmail.com</span>
+                <button><a href="html/shop.html">SHOP NOW</a></button>
                 <span>+91 746378922</span>
             </div>
             <div class="footer-foot">

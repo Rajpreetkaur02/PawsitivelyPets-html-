@@ -48,22 +48,3 @@
     margin-top: 80px;
     font-family: "Readex Pro", Sans-serif;
 }
-
-/* swiper css */
-.swiper{
-    width: 80vw;
-}
-.swiper-button-next, .swiper-button-prev{
-    margin-top: 200vh;
-}
-
-/* .container{
-    position: relative;
-    height: 450px;
-    width: 1075px;
-    display: flex;
-    align-items: center;
-} */
-.swiper-slide{
-    width: 30vw;
-}

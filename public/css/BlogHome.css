@@ -1,3 +1,4 @@
+/* universal */
 body {
     margin: 0;
     padding: 0;  
@@ -7,7 +8,8 @@ body {
     box-sizing: border-box;
 }
 
-/* blog section */
+/* BLOG SECTION */
+
 .write-a-blog-btn{
     display: flex;
     justify-content: center;
@@ -57,4 +59,8 @@ body {
     color: white;
     font-family: "Readex Pro", Sans-serif;
     font-weight: bold;
+}
+
+a, a:visited {
+    text-decoration: none;
 }

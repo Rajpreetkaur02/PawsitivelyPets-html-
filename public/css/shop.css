@@ -1,3 +1,5 @@
+/* universal */
+
 body {
     margin: 0;
     padding: 0;  
@@ -5,15 +7,14 @@ body {
 
 * {
     box-sizing: border-box;
-    /* outline: none;
-    border: none; */
     text-decoration: none; 
 }
+
+/* navbar */
 
 .navbar {
     background-color: #e5eeff;
     height: 12vh;
-    /* position: fixed; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +24,6 @@ body {
 
 .left {
     display: flex;
-    /* align-items: center; */
     justify-content: space-around;
     list-style: none;
     width: 35%;
@@ -59,15 +59,13 @@ a:visited {
 }
 .center>a>img{
     width: 24%;
-    /* height: 12vh; */
-    /* height: 5%; */
 }
 
 .right {
     display: flex;
     align-items: center;
     justify-content: space-around; 
-    width: 53%;
+    width: 60%;
     list-style: none;
 }
 
@@ -76,12 +74,7 @@ a:visited {
     font-family: "Readex Pro", Sans-serif;
 }
 
-#sign_in {
-    display: none;
-}
-
-.span2{
-    /* border: 2px solid black; */
+.span2 {
     cursor: pointer;
     padding: 15px 30px;
     border-radius: 30px;
@@ -94,7 +87,11 @@ a:visited {
     display: none;
 }
 
-#sign_in {
+#logout {
+    display: none;
+}
+
+#greeting {
     display: none;
 }
 
@@ -137,10 +134,9 @@ a:visited {
     display: block;
     align-items: center;
     justify-content: center;
-    /* background-color: #f1f1f1; */
-    /* transition-delay: 1s; */
 }
 
+/* signup page */
 
 .sign-up {
     position: absolute;
@@ -151,7 +147,6 @@ a:visited {
     width: 50vw;
     height: 77vh;
     z-index: 20;
-    /* object-fit: contain; */
     font-family: "Fredoka One",cursive;
     display: none;
     overflow-x: hidden;
@@ -164,31 +159,34 @@ a:visited {
 
 .container1 {
     padding: 16px;
-  }
+}
   
-  /* Full-width input fields */
-  input[type=text], input[type=password], input[type=email] {
+/* Full-width input fields */
+
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
-  }
+}
   
-  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
     background-color: #ddd;
     outline: none;
-  }
+}
   
-  /* Overwrite default styles of hr */
-  hr {
+/* Overwrite default styles of hr */
+
+hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
-  }
+}
   
-  /* Set a style for the submit/register button */
-  .registerbtn {
+/* Set a style for the submit/register button */
+
+.registerbtn {
     background-color: #ffd100;
     color: black;
     padding: 16px 20px;
@@ -199,29 +197,23 @@ a:visited {
     opacity: 0.9;
     font-family: "Fredoka One",cursive;
     font-size: 1rem;
-  }
-  
-  .registerbtn:hover {
-    opacity:1;
-  }
-  
-  /* Add a blue text color to links */
-  /* a {
-    color: dodgerblue;
-  } */
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin1 {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
-
-.container1 h1 {
-    text-align: center;
 }
 
 .sign_up_focus {
     display: block;
+}
+  
+.registerbtn:hover {
+    opacity:1;
+}
+
+.signin1 {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.container1 h1 {
+    text-align: center;
 }
 
 #cross {
@@ -233,6 +225,8 @@ a:visited {
     opacity: 0.5;
     /* background: rgba(0, 0, 0, 0.5); */
 }
+
+/* signin page */
 
 .sign-in {
     position: absolute;
@@ -257,13 +251,8 @@ a:visited {
 .container2 {
     padding: 16px;
   }
-  
-  /* Full-width input fields */
-  
-  /* Overwrite default styles of hr */
-  
-  /* Set a style for the submit/register button */
-  .signinbtn {
+
+.signinbtn {
     background-color: #ffd100;
     color: black;
     padding: 16px 20px;
@@ -274,19 +263,16 @@ a:visited {
     opacity: 0.9;
     font-family: "Fredoka One",cursive;
     font-size: 1rem;
-  }
+}
   
-  .signinbtn:hover {
+.signinbtn:hover {
     opacity:1;
-  }
+}
   
-  /* Add a blue text color to links */
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signup {
+.signup {
     background-color: #f1f1f1;
     text-align: center;
-  }
+}
 
 .container2 h1 {
     text-align: center;
@@ -301,10 +287,7 @@ a:visited {
     cursor: pointer;
 }
 
-#greeting {
-    display: none;
-}
-
+/* body */
 
 .shop_home_image{
     width: 70vw;
@@ -312,7 +295,6 @@ a:visited {
     height: 140%;
     object-fit: contain;
     animation: zoom-out 2s ease-out;
-    /* margin-left: 30vw; */
   }
 
   #towel {
@@ -369,7 +351,6 @@ a:visited {
   .img2{
       position: relative;
       width: 33.3%;
-      /* margin-left: -24px; */
   }
 
   .img3 {
@@ -485,33 +466,6 @@ a:visited {
     .addtocart:hover{
         transform: scale(1.1);
     }
-  
-  /* .img1 h4 {
-      padding-top: 10px;
-      text-align: center;
-      font-family: 'Ropa Sans', sans-serif;
-      line-height: 0px;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-  }
-  
-  .img1 h5 {
-      text-align: center;
-      font-family: 'Ropa Sans', sans-serif;
-  }
-  
-  .img2 h4 {
-      padding-top: 10px;
-      text-align: center;
-      font-family: 'Ropa Sans', sans-serif;
-      line-height: 0px;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-  }
-  .img2 h5 {
-      text-align: center;
-      font-family: 'Ropa Sans', sans-serif;
-  } */
   
   .view_features {
       text-align: center;
@@ -717,16 +671,13 @@ a:visited {
     visibility: hidden;
  }
 
- footer {
-    bottom: 0;
-    height: 35vh;
-    width: 100vw;
-    display: flex;
-    background-color: black;
+.view_products a {
     color: white;
-    justify-content: center;
-    align-items: flex-start;
- }
+}
+
+.view_products a:hover, .view_products a:visited:hover{
+    color: black;
+}
 
  .item_detail {
     font-family: 'Ropa Sans', sans-serif;
@@ -737,6 +688,131 @@ a:visited {
     line-height: 0px;
  }
 
+ .footer{
+    height: auto;
+    background-color: #e5eeff; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.footer-topbar{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+}
+
+.social-icon {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.footer-logo>a>img{
+    height: 12vh;
+}
+
+.footer-topbar>img{
+    height: 8vh;
+    width: 8vh;
+}
+
+.footer-secondbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Readex Pro", Sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 30vw;
+    align-items: center;
+}
+
+.main-footer{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.main-footer>span{
+    font-family: "Fredoka One",cursive;
+    font-size: 3rem;
+}
+
+.main-footer-email{
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-footer-email>span{
+    font-size:1.2rem;
+    font-family: "Readex Pro", Sans-serif;
+}
+.main-footer-email>button{
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #ffd100;
+    font-family: "Readex Pro", Sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.main-footer-email>button>a{
+    color: black;
+}
+
+.main-footer>div>img{
+    width: 46vh;
+}
+
+.footer-foot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-family: "Readex Pro", Sans-serif;
+}
+
+.details span {
+    display: flex;
+}
+
+.termsprivacy ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 17vw;
+}
+
+.termsprivacy ul li {
+    cursor: pointer;
+}
+
+.termsprivacy ul li:hover {
+    color: gray;
+    transition: 0.5;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+}
 
   @keyframes zoom-out {
     0% {
@@ -803,10 +879,6 @@ a:visited {
         .img3 > img {
             height: 50vh;
             width: 30vw;
-        }
-
-        .img2 {
-            margin-left: -8px;
         }
         .products {
             margin-left: 50px;

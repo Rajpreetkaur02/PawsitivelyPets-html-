@@ -11,8 +11,8 @@
     "express-fileupload": "^1.4.0",
     "express.js": "^1.0.0",
     "firebase": "^9.15.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "stripe": "^11.6.0"
   },
-  "devDependencies": {},
   "description": ""
 }

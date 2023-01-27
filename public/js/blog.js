@@ -1,15 +1,12 @@
 import { getFirestore, doc, getDoc, collection} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
 const db = getFirestore();
-
 const blogId = decodeURI(location.pathname.split("/").pop());
-
 const docRef = doc(db,"blogs", blogId);
 const docSnap = await getDoc(docRef);
 
 const addArticle = (ele, data) => {
     data = data.split("\n").filter(item => item.length);
-
     data.forEach(item => {
         if(item[0] == '#'){
             let hcount = 0;
@@ -37,12 +34,10 @@ const addArticle = (ele, data) => {
                 <img src="${src}" alt="${alt}" class="article-image">
             `;
         }
-        
         else{
             ele.innerHTML += `<p>${item}</p>`
         }
     })
-    // console.log(data);
 }
 
 const setupBlog = (data) => {
@@ -60,21 +55,22 @@ const setupBlog = (data) => {
     addArticle(article, data.article);
 }
 
-if(docSnap.exists()){
+if (docSnap.exists()) {
     setupBlog(docSnap.data());
-}else{
+} else {
     location.replace("/");
 }
 
-// //collection ref
-// const colRef = collection(db,"blogs")
-
-// //query
-// const q = query(colRef, limit(2));
-
 $(document).ready(function(){
     $('.shop').click(function(){
-          $('.shopdropdown').toggleClass('dropdown_menu_show');
-      });  
+        $('.shopdropdown').toggleClass('dropdown_menu_show');
+    });  
 });
 
+if (localStorage.getItem("uname") != null) {
+    $('#sign_in').hide();
+    $('#logout').show();
+    $('#greeting').show();
+    userName.innerHTML = localStorage.getItem("uname")
+    $('#userName').show();
+}

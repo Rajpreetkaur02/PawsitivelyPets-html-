@@ -1,10 +1,7 @@
 import { getFirestore, collection, getDocs, doc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
 const db = getFirestore();
-
 const blogSection = document.querySelector('.blogs-section');
-
-
 
 const createBlog = (blog) => {
     let data = blog.data();
@@ -26,6 +23,14 @@ querySnapshot.forEach((blog) => {
 
 $(document).ready(function(){
     $('.shop').click(function(){
-          $('.shopdropdown').toggleClass('dropdown_menu_show');
-      });  
+        $('.shopdropdown').toggleClass('dropdown_menu_show');
+    });  
 });
+
+if (localStorage.getItem("uname") != null) {
+    $('#sign_in').hide();
+    $('#logout').show();
+    $('#greeting').show();
+    userName.innerHTML = localStorage.getItem("uname")
+    $('#userName').show();
+}

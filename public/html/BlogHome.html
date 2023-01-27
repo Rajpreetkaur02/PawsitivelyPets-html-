@@ -15,9 +15,11 @@
     <title>PawsitivelyPets | Blog</title>
 </head>
 <body>
+    <!-- navbar -->
+
     <div class="navbar">
         <div class="left">
-            <li><a href="/index.html">HOME</a></li>
+            <li><a href="../index.html">HOME</a></li>
             <li class="shop">SHOP
                 <span class="material-symbols-outlined">
                     expand_more
@@ -25,40 +27,40 @@
             </li>
             <div class="shopdropdown">
                 <ul>
-                    <li><a href="../html/Groomingproducts.html">PET GROOMING</a></li>
-                    <li><a href="../html/FoodProducts.html">PET FOOD</a></li>
-                    <li><a href="../html/Accessories.html">ACCESSORIES</a></li>
+                  <li><a href="../html/Groomingproducts.html">PET GROOMING</a></li>
+                  <li><a href="../html/FoodProducts.html">PET FOOD</a></li>
+                  <li><a href="../html/Accessories.html">ACCESSORIES</a></li>
                 </ul>
             </div>
-            <li>BLOGS</li>
-            <li>ADOPTION</li>
+            <li><a href="/html/BlogHome.html">BLOGS</a></li>
+            <li><a href="../html/Adoption.html">ADOPTION</a></li>
         </div>
         <div class="center">            
-            <a href="/"><img src="../images/logo.png"/></a>
+            <a href="../index.html"><img src="../images/logo.png"/></a>
         </div>
         <div class="right">
             <li>CONTACT</li>
-            <span class="span2">SIGN IN</span>
             <span class="material-symbols-outlined">
                 account_circle
                 </span>
+            <span id="greeting">Hello,</span> <span id="userName">USER</span>
+            
+            <span class="span2" id="sign_in">SIGN IN</span>
+            <span class="span2" id="logout">LOGOUT</span>
         </div>
     </div>
+
     <!-- blog section -->
+
     <div class="write-a-blog-btn">
         <span><a href="/html/editor.html">WRITE A BLOG</a></span>
     </div>
     <section class="blogs-section">
-        <!-- <div class="blog-card">
-            <img src="../images/blog1.jpg" class="blog-img" alt="blog1"/>
-            <h1 class="blog-title">New Trends in pet industry in 2023</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, suscipit ducimus! Sit maiores tempora soluta esse sapiente nostrum, rem laborum. Eius, dignissimos! Reprehenderit impedit, explicabo voluptas provident maiores error neque!</p>
-            <a href="/" class="blog-btn"><button>read</button></a>
-        </div> -->
+        
     </section>
 
     <script type="module" src="../js/firebase.js"></script>
-    <!-- <script type="module" src="../js/blog.js"></script> -->
     <script type="module" src="../js/BlogHome.js"></script>
+    <script type="module" src="../js/shop2.js"></script>
 </body>
 </html>

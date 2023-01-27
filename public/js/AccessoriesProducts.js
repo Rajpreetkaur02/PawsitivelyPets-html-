@@ -4,15 +4,14 @@ const db = getFirestore();
 
 const blogSection = document.querySelector('.shop-content');
 
-
-
+var htm = ``;
 const createBlog = (blog) => {
     let data = blog.data();
-    blogSection.innerHTML += `
+    htm += `
             <div class="product-card">
             <img src="${data.ItemImage}" alt="food1" class="product-img">
             <h2 class="product-title">${data.name}</h2>
-            <span class="price">Rs ${data.price}</span>
+            <span class="price">Rs. ${data.price}</span>
             <p>${data.description}</p>
             <div class="stars">
                 <span class="material-symbols-outlined">grade</span>
@@ -21,20 +20,15 @@ const createBlog = (blog) => {
                 <span class="material-symbols-outlined">grade</span>
                 <span class="material-symbols-outlined">grade</span>
             </div>
-            <button class="addtocart">Add to cart</button> 
+            <button class="addtocart" onclick="addCartClicked(event)">Add to cart</button> 
         </div>
     `;
+    blogSection.innerHTML = htm;
 }
+
 const querySnapshot = await getDocs(collection(db,"Accessories"));
 querySnapshot.forEach((blog) => {
     if(blog.id != decodeURI(location.pathname.split("/").pop())){
         createBlog(blog);
     }
-})
-
-
-$(document).ready(function(){
-    $('.shop').click(function(){
-          $('.shopdropdown').toggleClass('dropdown_menu_show');
-      });  
-  });
+});
